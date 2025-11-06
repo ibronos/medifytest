@@ -31,3 +31,10 @@ Route::get('/master-items/delete/{id}', [App\Http\Controllers\MasterItemsControl
 
 
 Route::get('/master-items/update-random-data', [App\Http\Controllers\MasterItemsController::class, 'updateRandomData']);
+
+Route::get('/obat', [App\Http\Controllers\ObatController::class, 'index']);
+Route::get('/obat/search', [App\Http\Controllers\ObatController::class, 'search']);
+Route::get('/obat/form/{method}/{id?}', [App\Http\Controllers\ObatController::class, 'formView']);
+Route::post('/obat/form/{method}/{id?}', [App\Http\Controllers\ObatController::class, 'formSubmit']);
+Route::get('/obat/view/{kode}', [App\Http\Controllers\ObatController::class, 'singleView']);
+Route::get('/obat/delete/{id}', [App\Http\Controllers\ObatController::class, 'delete']);

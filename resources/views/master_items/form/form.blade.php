@@ -48,6 +48,11 @@
         </select>
     </div>
 
+    <div class="form-group">
+        <label>Keterangan</label>
+        <input type="text" class="form-control" name="keterangan"  value="{{$item->keterangan ?? ''}}">
+    </div>
+
     <button class="btn btn-primary mt-3">Submit</button>
 
 </form>

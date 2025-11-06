@@ -71,6 +71,7 @@ class MasterItemsController extends Controller
         $data_item->kode = $kode;
         $data_item->supplier = $request->supplier;
         $data_item->jenis = $request->jenis;
+        $data_item->keterangan = $request->keterangan;
         $data_item->save();
 
         return redirect('master-items');
